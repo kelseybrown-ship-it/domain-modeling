@@ -10,6 +10,13 @@ CREATE TABLE users (
   real_name TEXT,
   location TEXT
 );
+INSERT INTO users (
+    user_name,
+    real_name,
+    location
+)
+
+Values ("kbrown","Kelsey Brown","Cambridge"), ("bblock", "Ben Block", "Chicago");
 
 CREATE TABLE posts (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -36,3 +43,5 @@ CREATE TABLE followers (
   followed_user_id INTEGER,
   follower_user_id INTEGER
 );
+
+Select * from users;
